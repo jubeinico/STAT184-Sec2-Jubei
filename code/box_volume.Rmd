@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Length <- 11
+Width <- 8.5
+
+volume <- function(X){
+  (Length-2*X)*(Width-2*X)*(X)
+}
+
+
+square_length <- seq(from = 0, to = 4, by = 0.1)
+plot(
+  x = square_length,
+  y = volume(X=square_length),
+  type = "l"
+)
+
+Volume <- function(X,L = 11, W = 8.5){
+  (L-2*X)*(Wh-2*X)*(X)
+}
